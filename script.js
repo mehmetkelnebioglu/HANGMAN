@@ -1,6 +1,7 @@
- const words=["application","programming","interface"];
+/*  const words=["application","programming","interface"];
  const selectedWord = words[Math.floor(Math.random()*words.length)];
- console.log("seleceteed word",selectedWord);
+const  corretLetters=document.getElementById('word')
+ 
  const wrongLetters=document.getElementsByClassName("wrong-letters")
 
 
@@ -10,8 +11,20 @@ window.addEventListener("keydown", (e) =>{
 
     const letter = e.key.toLocaleLowerCase()
     console.log("letter",letter);
-    wrongLetters[0].innerHTML= `${wrongLetters[0].innerHTML} , ${letter}`;
- }
-   
+
+    if(selectedWord.includes(letter)){
+       corretLetters.innerHTML += letter+ ","
+    }else{
+        wrongLetters[0].innerHTML += letter + ","
+    }
+    
+   }
 });
+
+ */
+
+let a=5
+
+   console.log(a+=1) 
+
 
