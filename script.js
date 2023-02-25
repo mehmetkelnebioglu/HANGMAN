@@ -27,7 +27,7 @@ window.addEventListener("keydown", (e) =>{
 
 function updateWrongLetters(){
     console.log("updateWrongLetters")
-    wrongLetters.innerHTML = `${wrongLetters.map((letter)=>letter)}`;
+    wrongLetters.innerHTML = `${wrongLetters.map(letter => `<span>${letter}</span>`)}`;
 
 }
 
